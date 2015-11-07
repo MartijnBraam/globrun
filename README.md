@@ -34,6 +34,7 @@ The glob pattern to find the files. This uses the python3.5 glob.glob(recursive=
 `*` match everything  
 `?` match a single character  
 `[abc]` match a character that is a, b or c  
+`[1-5]` matches 1,2,3,4 or 5  
 `[!abc]` match a character that is not a,b or c
 
 It is also possible to use `**` for recursion like `zsh` and `fish` do. If you use `*` then every file in the directory
