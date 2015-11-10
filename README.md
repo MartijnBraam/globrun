@@ -18,7 +18,7 @@ chmod +x /opt/globrun/globrun.py
 alias globrun="noglob /opt/globrun/globrun.py"
 
 # bash/sh/ksh
-alias globrun='set -f;globrun';globrun(){ command /opt/globrun/globrun.py "$@";set +f;}
+alias globrun='set -f;globrun';globrun(){ /opt/globrun/globrun.py "$@";set +f;}
 ```
 
 Please note that this script depends on Python 3.5 or higher
