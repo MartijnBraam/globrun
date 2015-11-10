@@ -6,6 +6,23 @@ a command useing a placeholder and 1 file per execution.
 The minimal python version for this tool is 3.5 since I use a few of the new methods that
 break backward compatability (Hey this is a project for fun!).
 
+## Installation
+
+Clone this git repository to your favorite location for such repositories (/opt in my example) and add a shell alias to prevent globbing.
+
+```bash
+# make the script executable
+chmod +x /opt/globrun/globrun.py
+
+# zsh
+alias globrun="noglob /opt/globrun/globrun.py"
+
+# bash/sh/ksh
+alias globrun='set -f;globrun';globrun(){ command /opt/globrun/globrun.py "$@";set +f;}
+```
+
+Please note that this script depends on Python 3.5 or higher
+
 ## Usage
 
 The commandline is:
